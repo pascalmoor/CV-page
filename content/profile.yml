@@ -29,7 +29,7 @@ video:
   caption: 90-second intro — who I am and how I work.
 
 cta:
-  booking_url: https://cal.com/pascal-moor/intro        # Calendly / Cal.com link — update once you set it up
+  booking_url: https://cal.com/pascal-moor        # Calendly / Cal.com link — update once you set it up
   cv_url: /cv.pdf
   linkedin_url: https://www.linkedin.com/in/pascal-moor/ # confirm exact slug from your LinkedIn URL
   orcid_url: ""                                          # leave empty to hide — no ORCID on file
