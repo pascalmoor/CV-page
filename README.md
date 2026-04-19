@@ -69,3 +69,4 @@ For a custom domain, add a `static/CNAME` file with your domain and configure DN
 - [PyYAML](https://pyyaml.org/) — content parsing
 - [livereload](https://livereload.readthedocs.io/) — dev-server browser refresh
 - [Chart.js](https://www.chartjs.org/) — radar chart (loaded from CDN, no build step)
+# CV-page
