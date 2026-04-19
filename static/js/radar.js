@@ -1,4 +1,22 @@
 (function () {
+  // Split a label onto two lines at the whitespace boundary that best balances
+  // the two line lengths, preserving word order. Returns a string (single line)
+  // or array of strings (multi-line, as Chart.js expects).
+  function wrapLabel(label, maxLen) {
+    if (!label || label.length <= maxLen) return label;
+    var words = label.split(/\s+/);
+    if (words.length === 1) return label;
+    var bestSplit = 1;
+    var bestDiff = Infinity;
+    for (var s = 1; s < words.length; s++) {
+      var a = words.slice(0, s).join(' ').length;
+      var b = words.slice(s).join(' ').length;
+      var diff = Math.abs(a - b);
+      if (diff < bestDiff) { bestDiff = diff; bestSplit = s; }
+    }
+    return [words.slice(0, bestSplit).join(' '), words.slice(bestSplit).join(' ')];
+  }
+
   function init() {
     var canvas = document.getElementById('radar-chart');
     if (!canvas || typeof Chart === 'undefined') return;
@@ -35,6 +53,10 @@
       options: {
         responsive: true,
         maintainAspectRatio: true,
+        layout: {
+          // Extra room around the polygon so wrapped labels never touch the canvas edge.
+          padding: { top: 16, right: 24, bottom: 16, left: 24 }
+        },
         plugins: {
           legend: { display: false },
           tooltip: { callbacks: { label: function (ctx) { return ctx.parsed.r + ' / 100'; } } }
@@ -47,7 +69,10 @@
             angleLines: { color: colors.grid },
             pointLabels: {
               color: colors.text,
-              font: { size: 12, weight: '500' }
+              font: { size: 12, weight: '500' },
+              padding: 8,
+              centerPointLabels: false,
+              callback: function (label) { return wrapLabel(label, 16); }
             }
           }
         }
