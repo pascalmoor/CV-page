@@ -7,8 +7,8 @@
   <title>{{ profile.name }} — {{ profile.title }}</title>
   <meta name="description" content="{{ profile.seo.description | trim }}" />
   <link rel="canonical" href="{{ profile.seo.canonical_url }}" />
-  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
   <script>
     // Inline theme boot to avoid FOUC.
     (function () {
@@ -25,9 +25,9 @@
   <a class="skip-link" href="#main">Skip to content</a>
   {% block body %}{% endblock %}
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
-  <script src="/js/theme.js" defer></script>
-  <script src="/js/radar.js" defer></script>
-  <script src="/js/timeline.js" defer></script>
-  <script src="/js/badge.js" defer></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/radar.js" defer></script>
+  <script src="js/timeline.js" defer></script>
+  <script src="js/badge.js" defer></script>
 </body>
 </html>

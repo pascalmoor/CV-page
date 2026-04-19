@@ -18,19 +18,19 @@ intro: >
 open_to: open
 
 photo:
-  src: /img/hero-placeholder.svg
+  src: img/hero-placeholder.svg
   alt: Portrait of Pascal Moor
-  # Replace with /img/pascal.jpg once the professional photo is ready.
+  # Replace with img/pascal.jpg once the professional photo is ready.
 
 video:
   # Leave src empty to show the "coming soon" placeholder.
   src: ""
-  poster: /img/hero-placeholder.svg
+  poster: img/hero-placeholder.svg
   caption: 90-second intro — who I am and how I work.
 
 cta:
   booking_url: https://cal.com/pascal-moor        # Calendly / Cal.com link — update once you set it up
-  cv_url: /cv.pdf
+  cv_url: cv.pdf
   linkedin_url: https://www.linkedin.com/in/pascal-moor/ # confirm exact slug from your LinkedIn URL
   orcid_url: ""                                          # leave empty to hide — no ORCID on file
   email: pascal.moor@gmail.com

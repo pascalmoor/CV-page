@@ -4,7 +4,8 @@
       "Bash(python3 -m venv .venv)",
       "Bash(.venv/bin/pip install *)",
       "Bash(.venv/bin/python build.py)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(python build.py)"
     ]
   }
 }
