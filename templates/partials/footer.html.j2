@@ -1,0 +1,22 @@
+<footer class="site-footer" id="contact">
+  <div class="site-footer__cta">
+    <h2>Let's talk</h2>
+    <p>Hiring for a diagnostics, regulatory, or assay-development role? Book a 20-minute intro.</p>
+    <div class="hero__ctas">
+      <a class="btn btn--primary" href="{{ profile.cta.booking_url }}" target="_blank" rel="noopener">Book a call</a>
+      <a class="btn btn--secondary" href="{{ profile.cta.cv_url }}" download>Download CV</a>
+    </div>
+  </div>
+
+  <ul class="site-footer__links" role="list">
+    <li><a href="{{ profile.cta.linkedin_url }}" target="_blank" rel="noopener">LinkedIn</a></li>
+    {% if profile.cta.orcid_url %}
+    <li><a href="{{ profile.cta.orcid_url }}" target="_blank" rel="noopener">ORCID</a></li>
+    {% endif %}
+    <li><a href="mailto:{{ profile.cta.email }}">{{ profile.cta.email }}</a></li>
+  </ul>
+
+  <p class="site-footer__meta">
+    © {{ build_date[:4] }} {{ profile.name }} · last updated {{ build_date }}
+  </p>
+</footer>

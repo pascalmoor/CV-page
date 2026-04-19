@@ -1,0 +1,34 @@
+{% set axis_summary %}
+{%- for a in skills.axes -%}
+{{ a.label }}: {{ a.value }} out of 100{% if not loop.last %}; {% endif %}
+{%- endfor -%}
+{% endset %}
+
+<section class="section" id="expertise">
+  <header class="section__header">
+    <h2>Expertise</h2>
+    <p class="section__lead">A balanced profile across systems engineering, R&amp;D leadership, and IVD compliance.</p>
+  </header>
+
+  <div class="radar">
+    <div class="radar__canvas-wrap">
+      <canvas
+        id="radar-chart"
+        role="img"
+        aria-label="Skill radar — {{ axis_summary | trim }}"
+        data-axes='{{ skills.axes | tojson }}'
+      ></canvas>
+    </div>
+    <ul class="radar__legend">
+      {% for a in skills.axes %}
+      <li>
+        <span class="radar__legend-label">{{ a.label }}</span>
+        <span class="radar__legend-bar" aria-hidden="true">
+          <span class="radar__legend-fill" style="--v: {{ a.value }}%"></span>
+        </span>
+        <span class="radar__legend-value">{{ a.value }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

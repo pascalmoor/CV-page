@@ -1,0 +1,69 @@
+# Career milestones, most recent first.
+# Each item renders as a node on the timeline with scroll-reveal animation.
+
+items:
+  - year: "2024 – present"
+    role: Development Lead — Capillary Blood Testing
+    org: Roche Diagnostics · Risch-Rotkreuz, Switzerland
+    summary: >
+      Leading innovation work streams that enable patients to collect capillary
+      blood at home and post samples to the lab — an end-to-end concept spanning
+      assays, hardware, data, and regulation.
+    highlights:
+      - Technology scouting and feasibility to bridge venous and capillary blood collection
+      - Designed and ran equivalence studies substantiating capillary claims on core lab assays
+      - Shaped innovative business models with business leaders (incl. a pharma-facing opportunity) and gathered customer feedback
+
+  - year: "2025 – present"
+    role: Definition Lead — Automated Urinalysis
+    org: Roche Diagnostics · Risch-Rotkreuz, Switzerland
+    summary: >
+      Driving early-stage product definition for a fully automated urinalysis
+      analyzer (strip + sediment) in a lean project setup.
+    highlights:
+      - Translate business inputs and Voice-of-Customer signals into traceable product requirements with clear rationale
+      - Guide feature decisions with cross-functional teams — balancing user value, feasibility, risk, and business impact
+      - Embed regulatory, environmental safety, cybersecurity, and interoperability standards from day one
+
+  - year: "2022 – 2025"
+    role: Team Lead Instrument Integration
+    org: Roche Diagnostics · Risch-Rotkreuz, Switzerland
+    summary: >
+      Led a team of up to 8 test engineers covering software and hardware
+      verification of IVD analyzers under IVDR and GMP — while simultaneously
+      acting as Integration Lead and Test Manager inside development projects.
+    highlights:
+      - Merged two previously separate teams into one — defusing a long-running senior-engineer conflict and unlocking cross-team knowledge transfer
+      - Established and led the R&D power-user group for the organisation-wide ALM tool transition
+      - Partnered with cross-functional teams on test strategy, risk mitigation, and quality improvement
+
+  - year: "2019 – 2021"
+    role: Senior Development Engineer — Coagulation Diagnostics
+    org: Roche Diagnostics · Risch-Rotkreuz, Switzerland
+    summary: >
+      Led multiple feasibility and validation projects in coagulation diagnostics —
+      combining lateral leadership, hands-on lab work, and data-driven decision
+      support for leadership.
+    highlights:
+      - M&A support — led a 3-person team assessing a competitor's coagulation reagents; findings fed a leadership decision to acquire the target's reagent division
+      - Led lyophilisate glass-vial validation after the original manufacturing site burned down; released new vials for coagulation assays
+      - Helped implement automated reporting systems for market and performance analysis, enabling data-driven decisions
+
+  - year: "2017 – 2019"
+    role: Development Engineer & Application Specialist
+    org: Roche Diagnostics · Risch-Rotkreuz, Switzerland
+    summary: >
+      Verified clinical chemistry and immuno-assay reagents from a new Chinese
+      manufacturing site, ensuring compliance with EEA and Chinese regulations.
+    highlights:
+      - Authored test and verification reports for health-authority submissions
+      - Maintained GLP compliance in a BSL-2 lab working with human biological materials
+      - Resolved field escalations and released system updates within a global life-cycle management team
+
+  - year: "2011 – 2016"
+    role: MSc & BSc, Health Science and Technology
+    org: ETH Zürich — Medical Technologies track (MSc)
+    summary: >
+      Master of Science in Health Science and Technology (Medical Technologies)
+      and Bachelor of Science in Health Science and Technology.
+    highlights: []

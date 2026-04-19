@@ -1,0 +1,19 @@
+# Hard numbers that quantify impact. 3–5 items work best.
+# `value` can be any string ("8+", "€2.4 M", "3×").
+
+items:
+  - value: "8+"
+    label: Years at Roche Diagnostics
+    context: From hands-on lab to development lead
+
+  - value: "5"
+    label: Progressively senior R&D roles
+    context: Engineer → Senior Engineer → Team Lead → Dev Lead
+
+  - value: "8"
+    label: Test engineers led in Instrument Integration
+    context: Merged from two separate teams, 2022 – 2025
+
+  - value: "2"
+    label: Parallel lead roles today
+    context: Capillary blood testing · automated urinalysis

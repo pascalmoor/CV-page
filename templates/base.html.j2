@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>{{ profile.name }} — {{ profile.title }}</title>
+  <meta name="description" content="{{ profile.seo.description | trim }}" />
+  <link rel="canonical" href="{{ profile.seo.canonical_url }}" />
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script>
+    // Inline theme boot to avoid FOUC.
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% block body %}{% endblock %}
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+  <script src="/js/theme.js" defer></script>
+  <script src="/js/radar.js" defer></script>
+  <script src="/js/timeline.js" defer></script>
+  <script src="/js/badge.js" defer></script>
+</body>
+</html>

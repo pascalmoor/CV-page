@@ -1,0 +1,16 @@
+<section class="section" id="credentials">
+  <header class="section__header">
+    <h2>Regulatory credentials</h2>
+    <p class="section__lead">The gatekeepers of med-tech hiring — front and centre.</p>
+  </header>
+
+  <ul class="cred-grid" role="list">
+    {% for item in certifications['items'] %}
+    <li class="cred-card cred-card--{{ item.tier }}">
+      <span class="cred-card__badge">{{ item.name }}</span>
+      <p class="cred-card__full">{{ item.full_name }}</p>
+      {% if item.note %}<p class="cred-card__note">{{ item.note }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>

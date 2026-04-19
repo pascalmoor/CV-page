@@ -1,0 +1,43 @@
+# Regulatory knowledge (via Roche work) + formal certifications.
+# Gatekeeper items (`tier: core`) first — what med-tech hiring managers scan for.
+
+items:
+  - name: IVDR
+    full_name: EU In Vitro Diagnostic Regulation (2017/746)
+    note: Verification of IVD analyzers under IVDR; regulatory requirements in product definition
+    tier: core
+
+  - name: GMP
+    full_name: Good Manufacturing Practice
+    note: Software and hardware verification of IVD instruments under GMP
+    tier: core
+
+  - name: GLP
+    full_name: Good Laboratory Practice
+    note: BSL-2 lab work with human biological materials — reagent verification for health-authority submissions
+    tier: core
+
+  - name: ASEP
+    full_name: Associate Systems Engineering Professional (INCOSE)
+    note: Requirements engineering, verification & validation, lifecycle processes — 2023
+    tier: core
+
+  - name: Applied ML in Python
+    full_name: Applied Machine Learning in Python (Coursera)
+    note: 2020 — supervised/unsupervised methods on real datasets
+    tier: supporting
+
+  - name: Data Science in Python
+    full_name: Introduction to Data Science in Python (Coursera)
+    note: 2019 — data wrangling, pandas, statistical methods
+    tier: supporting
+
+  - name: Plotting in Python
+    full_name: Applied Plotting, Charting & Data Representation in Python (Coursera)
+    note: 2019 — data visualisation and communication
+    tier: supporting
+
+  - name: Blockchain Basics
+    full_name: Blockchain Basics (Coursera)
+    note: 2021 — distributed-ledger fundamentals
+    tier: supporting

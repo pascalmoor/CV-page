@@ -1,0 +1,43 @@
+# Edit this file to change the hero, CTAs, contact links, and open-to status.
+# Rebuild with `python build.py` to see changes.
+
+name: Pascal Moor
+title: R&D Development Lead · IVD Diagnostics
+tagline: Bringing the lab to the patient — decentralised IVD, from concept to launch
+intro: >
+  R&D project lead with 8+ years at Roche Diagnostics, spanning the full development
+  cycle — hands-on lab work, hardware and software verification, cross-functional
+  team leadership, and early-stage product definition. I build diagnostics that
+  empower patients and meet the demands of decentralised care, demographic shifts,
+  and scalable self-managed testing.
+
+# Status pill in the hero. One of:
+#   actively_looking   — green, "Actively open to new roles"
+#   open               — amber, "Open to the right role"
+#   not_looking        — grey,  "Not currently looking"
+open_to: open
+
+photo:
+  src: /img/hero-placeholder.svg
+  alt: Portrait of Pascal Moor
+  # Replace with /img/pascal.jpg once the professional photo is ready.
+
+video:
+  # Leave src empty to show the "coming soon" placeholder.
+  src: ""
+  poster: /img/hero-placeholder.svg
+  caption: 90-second intro — who I am and how I work.
+
+cta:
+  booking_url: https://cal.com/pascal-moor/intro        # Calendly / Cal.com link — update once you set it up
+  cv_url: /cv.pdf
+  linkedin_url: https://www.linkedin.com/in/pascal-moor/ # confirm exact slug from your LinkedIn URL
+  orcid_url: ""                                          # leave empty to hide — no ORCID on file
+  email: pascal.moor@gmail.com
+
+seo:
+  description: >
+    Pascal Moor — R&D Development Lead with 8+ years at Roche Diagnostics.
+    IVDR / GMP verification, systems engineering (ASEP), cross-functional leadership,
+    and early-stage product definition for decentralised IVD diagnostics.
+  canonical_url: https://pascalmoor.com

@@ -1,0 +1,18 @@
+<section class="section" id="voices">
+  <header class="section__header">
+    <h2>Voices</h2>
+    <p class="section__lead">What people I've worked with have said.</p>
+  </header>
+
+  <ul class="quote-grid" role="list">
+    {% for t in testimonials['items'] %}
+    <li class="quote">
+      <blockquote class="quote__text">{{ t.quote | trim }}</blockquote>
+      <figcaption class="quote__attrib">
+        <strong>{{ t.author }}</strong>
+        <span>{{ t.role }}{% if t.org %}, {{ t.org }}{% endif %}</span>
+      </figcaption>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

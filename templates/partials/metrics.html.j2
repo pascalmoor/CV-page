@@ -1,0 +1,13 @@
+<section class="metrics" aria-label="Impact metrics">
+  <ul class="metrics__grid">
+    {% for item in metrics['items'] %}
+    <li class="metric">
+      <span class="metric__value">{{ item.value }}</span>
+      <span class="metric__label">{{ item.label }}</span>
+      {% if item.context %}
+      <span class="metric__context">{{ item.context }}</span>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>

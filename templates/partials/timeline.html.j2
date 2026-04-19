@@ -1,0 +1,27 @@
+<section class="section" id="career">
+  <header class="section__header">
+    <h2>Career</h2>
+    <p class="section__lead">From the bench to two parallel lead roles — eight years across the IVD development cycle at Roche.</p>
+  </header>
+
+  <ol class="timeline" role="list">
+    {% for item in timeline['items'] %}
+    <li class="timeline__node" data-reveal>
+      <div class="timeline__marker" aria-hidden="true"></div>
+      <div class="timeline__card">
+        <span class="timeline__year">{{ item.year }}</span>
+        <h3 class="timeline__role">{{ item.role }}</h3>
+        <p class="timeline__org">{{ item.org }}</p>
+        <p class="timeline__summary">{{ item.summary | trim }}</p>
+        {% if item.highlights %}
+        <ul class="timeline__highlights">
+          {% for h in item.highlights %}
+          <li>{{ h }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>

@@ -1,0 +1,20 @@
+# Radar chart axes. Values are 0–100 (self-assessed proficiency).
+# Tuned for an R&D / systems-engineering / IVD development-lead profile.
+
+axes:
+  - label: Systems Engineering & V&V
+    value: 90
+  - label: Cross-functional Leadership
+    value: 85
+  - label: Product Lifecycle & Definition
+    value: 85
+  - label: IVDR & GMP Compliance
+    value: 80
+  - label: Risk Management
+    value: 80
+  - label: Assay & Reagent Development
+    value: 75
+  - label: Voice-of-Customer Analysis
+    value: 75
+  - label: Data Analysis (Python)
+    value: 70

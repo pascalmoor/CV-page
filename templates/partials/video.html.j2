@@ -1,0 +1,28 @@
+<section class="section section--narrow" id="meet">
+  <header class="section__header">
+    <h2>Meet me, in 90 seconds</h2>
+    <p class="section__lead">A short intro — who I am and how I work.</p>
+  </header>
+
+  <div class="video-frame">
+    {% if profile.video.src %}
+    <video
+      controls
+      preload="metadata"
+      poster="{{ profile.video.poster }}"
+      playsinline
+    >
+      <source src="{{ profile.video.src }}" type="video/mp4" />
+      Your browser doesn't support the video tag.
+    </video>
+    {% else %}
+    <div class="video-frame__placeholder" role="note">
+      <span class="video-frame__badge">Coming soon</span>
+      <p>A 60–90 s intro video will live here. Drop the file at <code>static/video/intro.mp4</code> and set <code>profile.video.src</code>.</p>
+    </div>
+    {% endif %}
+    {% if profile.video.caption %}
+    <p class="video-frame__caption">{{ profile.video.caption }}</p>
+    {% endif %}
+  </div>
+</section>

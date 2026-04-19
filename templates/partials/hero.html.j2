@@ -1,0 +1,38 @@
+{% set status_map = {
+  'actively_looking': {'class': 'is-active',  'text': 'Actively open to new roles'},
+  'open':             {'class': 'is-open',    'text': 'Open to the right role'},
+  'not_looking':      {'class': 'is-closed',  'text': 'Not currently looking'}
+} %}
+{% set status = status_map.get(profile.open_to, status_map['open']) %}
+
+<section class="hero" id="top">
+  <div class="hero__content">
+    <span class="status-pill {{ status.class }}" data-status="{{ profile.open_to }}">
+      <span class="status-pill__dot" aria-hidden="true"></span>
+      {{ status.text }}
+    </span>
+    <h1 class="hero__name">{{ profile.name }}</h1>
+    <p class="hero__title">{{ profile.title }}</p>
+    <p class="hero__tagline">{{ profile.tagline }}</p>
+    <p class="hero__intro">{{ profile.intro | trim }}</p>
+    <div class="hero__ctas">
+      <a class="btn btn--primary" href="{{ profile.cta.booking_url }}" target="_blank" rel="noopener">
+        Book a call
+      </a>
+      <a class="btn btn--secondary" href="{{ profile.cta.cv_url }}" download>
+        Download CV
+      </a>
+      <a class="btn btn--ghost" href="{{ profile.cta.linkedin_url }}" target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+    </div>
+  </div>
+  <div class="hero__photo">
+    <img
+      src="{{ profile.photo.src }}"
+      alt="{{ profile.photo.alt }}"
+      width="480"
+      height="600"
+    />
+  </div>
+</section>
